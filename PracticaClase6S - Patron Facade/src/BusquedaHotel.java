@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,9 +13,9 @@ public class BusquedaHotel {
         return hotelesEncontrados;
     }
 
-    public void encontrarHotel(Hotel hotelBuscar, List<Hotel> hoteles){
+    public void encontrarHotel(String ciudadDestino, LocalDate fechaEntrada, List<Hotel> hoteles){
         for (Hotel hotel: hoteles) {
-            if (hotel.equals(hotelBuscar)) {
+            if (hotel.getCiudad().equals(ciudadDestino) && hotel.getFechaEntrada().equals(fechaEntrada)) {
                 hotelesEncontrados.add(hotel);
             }
         }

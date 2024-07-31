@@ -1,5 +1,6 @@
+import java.time.LocalDate;
 import java.util.List;
 
 public interface IBusqueda {
-    public void busquedaCompleta(Vuelo vueloBuscar, Hotel hotelBuscar, List<Vuelo> vuelos, List<Hotel> hoteles);
+    public void busquedaCompleta(String ciudadDestino, LocalDate fechaSalida, List<Vuelo> vuelos, List<Hotel> hoteles);
 }

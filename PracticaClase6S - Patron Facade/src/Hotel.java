@@ -11,6 +11,14 @@ public class Hotel {
         this.ciudad = ciudad;
     }
 
+    public LocalDate getFechaEntrada() {
+        return fechaEntrada;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
     @Override
     public String toString() {
         return "Hotel:\n" +
@@ -20,17 +28,4 @@ public class Hotel {
                 "\n----------------------------";
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        Hotel hotel = (Hotel) obj;
-        return fechaEntrada.equals(hotel.fechaEntrada) &&
-                fechaSalida.equals(hotel.fechaSalida) &&
-                ciudad.equals(hotel.ciudad);
-    }
 }

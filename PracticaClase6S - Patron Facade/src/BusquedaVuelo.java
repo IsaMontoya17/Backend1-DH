@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,9 +13,9 @@ public class BusquedaVuelo {
         return vuelosEncontrados;
     }
 
-    public void encontrarVuelo(Vuelo vueloBuscar, List<Vuelo> vuelos){
+    public void encontrarVuelo(String ciudadDestino, LocalDate fechaSalida, List<Vuelo> vuelos){
         for (Vuelo vuelo : vuelos) {
-            if (vuelo.equals(vueloBuscar)) {
+            if (vuelo.getCiudadDestino().equals(ciudadDestino) && vuelo.getFechaSalida().equals(fechaSalida)) {
                 vuelosEncontrados.add(vuelo);
             }
         }

@@ -29,11 +29,10 @@ public class Cliente {
         hoteles.add(new Hotel(LocalDate.of(2024, 9, 11), LocalDate.of(2024, 9, 15), "Sydney"));
         hoteles.add(new Hotel(LocalDate.of(2024, 9, 16), LocalDate.of(2024, 9, 20), "Melbourne"));
 
-        //ciudad Destino y fecha salida
-        Vuelo vueloBuscar = new Vuelo(LocalDate.of(2024, 8, 1), LocalDate.of(2024, 8, 15), "New York", "Los Angeles");
-        Hotel hotelBuscar = new Hotel(LocalDate.of(2024, 8, 6), LocalDate.of(2024, 8, 10), "Los Angeles");
+        String ciudadDestino = "Los Angeles";
+        LocalDate fecha = LocalDate.of(2024, 8, 1);
         BusquedaImpl busqueda = new BusquedaImpl();
-        busqueda.busquedaCompleta(vueloBuscar, hotelBuscar, vuelos, hoteles);
+        busqueda.busquedaCompleta(ciudadDestino, fecha, vuelos, hoteles);
 
     }
 }

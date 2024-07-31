@@ -13,6 +13,13 @@ public class Vuelo {
         this.ciudadDestino = ciudadDestino;
     }
 
+    public LocalDate getFechaSalida() {
+        return fechaSalida;
+    }
+
+    public String getCiudadDestino() {
+        return ciudadDestino;
+    }
 
     @Override
     public String toString() {
@@ -22,21 +29,6 @@ public class Vuelo {
                 "\nciudadOrigen = " + ciudadOrigen +
                 "\nciudadDestino = " + ciudadDestino +
                 "\n----------------------------";
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        Vuelo vuelo = (Vuelo) obj;
-        return fechaSalida.equals(vuelo.fechaSalida) &&
-                fechaRegreso.equals(vuelo.fechaRegreso) &&
-                ciudadOrigen.equals(vuelo.ciudadOrigen) &&
-                ciudadDestino.equals(vuelo.ciudadDestino);
     }
 
 }

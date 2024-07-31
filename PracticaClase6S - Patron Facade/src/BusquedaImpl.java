@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.List;
 
 public class BusquedaImpl implements IBusqueda{
@@ -5,13 +6,13 @@ public class BusquedaImpl implements IBusqueda{
     public BusquedaImpl() {}
 
     @Override
-    public void busquedaCompleta(Vuelo vueloBuscar, Hotel hotelBuscar, List<Vuelo> vuelos, List<Hotel> hoteles) {
+    public void busquedaCompleta(String ciudadDestino, LocalDate fechaSalida, List<Vuelo> vuelos, List<Hotel> hoteles) {
 
         BusquedaVuelo busquedaVuelo = new BusquedaVuelo();
         BusquedaHotel busquedaHotel = new BusquedaHotel();
 
-        busquedaVuelo.encontrarVuelo(vueloBuscar, vuelos);
-        busquedaHotel.encontrarHotel(hotelBuscar, hoteles);
+        busquedaVuelo.encontrarVuelo(ciudadDestino, fechaSalida, vuelos);
+        busquedaHotel.encontrarHotel(ciudadDestino, fechaSalida, hoteles);
 
         mostrarInformacion(busquedaVuelo, busquedaHotel);
 
