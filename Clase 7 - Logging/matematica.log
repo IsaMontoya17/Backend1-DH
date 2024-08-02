@@ -1,0 +1,11 @@
+[2024-08-01 21:50:02] [ INFO ] [Matematica:12] Se inicio la ejecución del programa
+[2024-08-01 21:50:02] [ INFO ] [CalculoMatematico:7] Se ingresó al método que calcula la división
+[2024-08-01 21:50:02] [ WARN ] [CalculoMatematico:9] Log -> No se pudo dividir por cero
+[2024-08-01 21:50:02] [ ERROR] [Matematica:16] Se produjo un error al dividir por cero No se puede dividir un número por cero
+[2024-08-01 21:53:42] [ INFO ] [Matematica:12] Se inicio la ejecución del programa
+[2024-08-01 21:53:42] [ INFO ] [CalculoMatematico:7] Se ingresó al método que calcula la división
+[2024-08-01 21:53:42] [ INFO ] [CalculoMatematico:14] Termino la ejecución del método
+[2024-08-01 21:55:01] [ INFO ] [Matematica:12] Se inicio la ejecución del programa
+[2024-08-01 21:55:01] [ INFO ] [CalculoMatematico:7] Se ingresó al método que calcula la división
+[2024-08-01 21:55:01] [ WARN ] [CalculoMatematico:9] Log -> No se pudo dividir por cero
+[2024-08-01 21:55:01] [ ERROR] [Matematica:16] Se produjo un error al dividir por cero No se puede dividir un número por cero
