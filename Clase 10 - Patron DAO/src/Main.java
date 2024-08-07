@@ -4,16 +4,23 @@ import servicio.MedicamentoService;
 
 public class Main {
     public static void main(String[] args) {
-        //crear un medicamento y lo vamos a persistir
-
         MedicamentoService medicamentoService = new MedicamentoService();
 
-        //con este método creamos las tablas
         BD.createTable();
 
-        //creamos un medicamento
         Medicamento paracetamol = new Medicamento("Paracetamol",
                 "Bayer", 11, 2500d, 11);
+
+        Medicamento acetaminofen = new Medicamento("Acetaminofen",
+                "Genfar", 5, 2000d, 34);
+
+        medicamentoService.guardar(paracetamol);
+        medicamentoService.guardar(acetaminofen);
+
+        medicamentoService.buscarPorId(2);
+        medicamentoService.buscarPorId(3);
+
+        medicamentoService.listar();
 
 
     }

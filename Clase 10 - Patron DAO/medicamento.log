@@ -1,3 +1,39 @@
 [2024-08-07 00:02:03] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
 [2024-08-07 00:02:40] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
 [2024-08-07 00:02:40] [ INFO ] [MedicamentoDAOH2:42] Este es el medicamento que se guardó Paracetamol
+[2024-08-07 11:01:24] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
+[2024-08-07 11:01:24] [ INFO ] [MedicamentoDAOH2:42] Este es el medicamento que se guardó Paracetamol
+[2024-08-07 11:18:23] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
+[2024-08-07 11:18:23] [ INFO ] [MedicamentoDAOH2:42] Este es el medicamento que se guardó Paracetamol
+[2024-08-07 11:18:23] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
+[2024-08-07 11:18:23] [ INFO ] [MedicamentoDAOH2:42] Este es el medicamento que se guardó Acetaminofen
+[2024-08-07 11:18:23] [ INFO ] [MedicamentoDAOH2:61] Comenzamos a buscar un medicamento
+[2024-08-07 11:18:23] [ INFO ] [MedicamentoDAOH2:83] Este es el medicamento que se encontró: Acetaminofen
+[2024-08-07 11:18:42] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
+[2024-08-07 11:18:42] [ INFO ] [MedicamentoDAOH2:42] Este es el medicamento que se guardó Paracetamol
+[2024-08-07 11:18:42] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
+[2024-08-07 11:18:42] [ INFO ] [MedicamentoDAOH2:42] Este es el medicamento que se guardó Acetaminofen
+[2024-08-07 11:18:42] [ INFO ] [MedicamentoDAOH2:61] Comenzamos a buscar un medicamento
+[2024-08-07 11:18:42] [ INFO ] [MedicamentoDAOH2:83] Este es el medicamento que se encontró: Acetaminofen
+[2024-08-07 11:18:42] [ INFO ] [MedicamentoDAOH2:61] Comenzamos a buscar un medicamento
+[2024-08-07 11:18:42] [ INFO ] [MedicamentoDAOH2:83] Este es el medicamento que se encontró: Paracetamol
+[2024-08-07 11:19:16] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
+[2024-08-07 11:19:16] [ INFO ] [MedicamentoDAOH2:42] Este es el medicamento que se guardó Paracetamol
+[2024-08-07 11:19:16] [ INFO ] [MedicamentoDAOH2:19] Comenzamos a persistir un medicamento
+[2024-08-07 11:19:16] [ INFO ] [MedicamentoDAOH2:42] Este es el medicamento que se guardó Acetaminofen
+[2024-08-07 11:19:16] [ INFO ] [MedicamentoDAOH2:61] Comenzamos a buscar un medicamento
+[2024-08-07 11:19:16] [ INFO ] [MedicamentoDAOH2:83] Este es el medicamento que se encontró: Acetaminofen
+[2024-08-07 11:19:16] [ INFO ] [MedicamentoDAOH2:61] Comenzamos a buscar un medicamento
+[2024-08-07 11:19:16] [ INFO ] [MedicamentoDAOH2:85] No se encontró ningún medicamento con el ID: 3
+[2024-08-07 11:32:18] [ INFO ] [MedicamentoDAOH2:21] Comenzamos a persistir un medicamento
+[2024-08-07 11:32:18] [ INFO ] [MedicamentoDAOH2:44] Este es el medicamento que se guardó Paracetamol
+[2024-08-07 11:32:18] [ INFO ] [MedicamentoDAOH2:21] Comenzamos a persistir un medicamento
+[2024-08-07 11:32:18] [ INFO ] [MedicamentoDAOH2:44] Este es el medicamento que se guardó Acetaminofen
+[2024-08-07 11:32:18] [ INFO ] [MedicamentoDAOH2:63] Comenzamos a buscar un medicamento
+[2024-08-07 11:32:18] [ INFO ] [MedicamentoDAOH2:85] Este es el medicamento que se encontró: Acetaminofen
+[2024-08-07 11:32:19] [ INFO ] [MedicamentoDAOH2:63] Comenzamos a buscar un medicamento
+[2024-08-07 11:32:19] [ INFO ] [MedicamentoDAOH2:87] No se encontró ningún medicamento con el ID: 3
+[2024-08-07 11:32:19] [ INFO ] [MedicamentoDAOH2:105] Comenzamos a listar los medicamentos
+[2024-08-07 11:32:19] [ INFO ] [MedicamentoDAOH2:128] Medicamento encontrado: ID = 1, Nombre = Paracetamol, Laboratorio = Bayer, Cantidad = 11, Precio = 2500.0, Código = 11
+[2024-08-07 11:32:19] [ INFO ] [MedicamentoDAOH2:128] Medicamento encontrado: ID = 2, Nombre = Acetaminofen, Laboratorio = Genfar, Cantidad = 5, Precio = 2000.0, Código = 34
+[2024-08-07 11:32:19] [ INFO ] [MedicamentoDAOH2:139] Se listaron 2 medicamentos.
