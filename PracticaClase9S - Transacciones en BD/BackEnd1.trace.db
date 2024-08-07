@@ -1,0 +1,38 @@
+2024-08-06 20:26:57.415827-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO ODONTOLOGOS VALUES (?,?,?,?) [42102-230]
+2024-08-06 20:27:23.673245-05:00 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-230]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Main.getConnection(Main.java:65)
+	at Main.main(Main.java:25)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-230]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+2024-08-06 20:28:17.860082-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "CUENTAS" ya existe
+Table "CUENTAS" already exists; SQL statement:
+CREATE TABLE CUENTAS (ID INT PRIMARY KEY,APELLIDO VARCHAR(30) NOT NULL,NOMBRE VARCHAR(30) NOT NULL,MATRICULA VARCHAR(50) NOT NULL) [42101-230]
+2024-08-06 20:28:52.037331-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "Garcia"
+Data conversion error converting "Garcia" [22018-230]
+2024-08-06 20:35:18.142525-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-230]
+2024-08-06 20:35:38.446352-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-230]
