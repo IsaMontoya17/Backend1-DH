@@ -46,3 +46,88 @@
 [2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
 [2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
 [2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-14 14:03:25] [ INFO ] [PacienteDaoH2:21] Estamos guardando un paciente
+[2024-08-14 14:03:25] [ INFO ] [PacienteDaoH2:56] Guardamos el paciente con nombre Erica
+[2024-08-14 14:03:25] [ INFO ] [PacienteDaoH2:21] Estamos guardando un paciente
+[2024-08-14 14:03:25] [ INFO ] [PacienteDaoH2:56] Guardamos el paciente con nombre Bruno
+[2024-08-14 14:03:25] [ INFO ] [PacienteDaoH2:21] Estamos guardando un paciente
+[2024-08-14 14:03:25] [ INFO ] [PacienteDaoH2:56] Guardamos el paciente con nombre Israel
+[2024-08-14 14:03:25] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:03:25] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-14 14:03:25] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:03:25] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-14 14:03:25] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-14 14:03:25] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-14 14:03:25] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-14 14:03:25] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-14 14:13:16] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:13:16] [ INFO ] [PacienteDaoH2:43] paciente guardado: Erica Mar
+[2024-08-14 14:13:16] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:13:16] [ INFO ] [PacienteDaoH2:43] paciente guardado: Bruno Apellido
+[2024-08-14 14:13:16] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:13:16] [ INFO ] [PacienteDaoH2:43] paciente guardado: Israel Apellido
+[2024-08-14 14:13:16] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:13:16] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-14 14:13:16] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:13:16] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-14 14:13:16] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-14 14:13:16] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-14 14:13:16] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-14 14:13:16] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:43] paciente guardado: Erica Mar
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:43] paciente guardado: Bruno Apellido
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:43] paciente guardado: Israel Apellido
+[2024-08-14 14:17:06] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:17:06] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-14 14:17:06] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:17:06] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:60] Comenzamos a listar los pacientes
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:82] Paciente encontrado: ID = 1, Apellido = Mar, Nombre = Erica, Matrícula = Colombia, DNI = 123, Fecha de alta = 2024-03-03
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:82] Paciente encontrado: ID = 2, Apellido = Apellido, Nombre = Bruno, Matrícula = Colombia, DNI = 123, Fecha de alta = 2024-03-03
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:82] Paciente encontrado: ID = 3, Apellido = Apellido, Nombre = Israel, Matrícula = Colombia, DNI = 123, Fecha de alta = 2024-03-03
+[2024-08-14 14:17:06] [ INFO ] [PacienteDaoH2:94] Se listaron 3 pacientes.
+[2024-08-14 14:17:06] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-14 14:17:06] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-14 14:17:06] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-14 14:17:06] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:43] paciente guardado: Erica Mar
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:43] paciente guardado: Bruno Apellido
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:43] paciente guardado: Israel Apellido
+[2024-08-14 14:17:20] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:17:20] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-14 14:17:20] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:17:20] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:60] Comenzamos a listar los pacientes
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:82] Paciente encontrado: ID = 1, Apellido = Mar, Nombre = Erica, Matrícula = Colombia, DNI = 123, Fecha de alta = 2024-03-03
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:82] Paciente encontrado: ID = 2, Apellido = Apellido, Nombre = Bruno, Matrícula = Colombia, DNI = 123, Fecha de alta = 2024-03-03
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:82] Paciente encontrado: ID = 3, Apellido = Apellido, Nombre = Israel, Matrícula = Colombia, DNI = 123, Fecha de alta = 2024-03-03
+[2024-08-14 14:17:20] [ INFO ] [PacienteDaoH2:94] Se listaron 3 pacientes.
+[2024-08-14 14:17:20] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-14 14:17:20] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-14 14:17:20] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-14 14:17:20] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:43] paciente guardado: Erica Mar
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:43] paciente guardado: Bruno Apellido
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:18] Comenzamos a persistir un paciente
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:43] paciente guardado: Israel Apellido
+[2024-08-14 14:18:22] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:18:22] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-14 14:18:22] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-14 14:18:22] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:60] Comenzamos a listar los pacientes
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:82] Paciente encontrado: ID = 1, Apellido = Mar, Nombre = Erica, Domicilio = Colombia, DNI = 123, Fecha de alta = 2024-03-03
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:82] Paciente encontrado: ID = 2, Apellido = Apellido, Nombre = Bruno, Domicilio = Colombia, DNI = 123, Fecha de alta = 2024-03-03
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:82] Paciente encontrado: ID = 3, Apellido = Apellido, Nombre = Israel, Domicilio = Colombia, DNI = 123, Fecha de alta = 2024-03-03
+[2024-08-14 14:18:22] [ INFO ] [PacienteDaoH2:94] Se listaron 3 pacientes.
+[2024-08-14 14:18:22] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-14 14:18:22] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-14 14:18:22] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-14 14:18:22] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.

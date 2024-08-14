@@ -53,4 +53,15 @@ public class Odontologo {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Odontologo{" +
+                "apellido='" + apellido + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", matricula='" + matricula + '\'' +
+                ", id=" + id +
+                '}';
+    }
+
 }

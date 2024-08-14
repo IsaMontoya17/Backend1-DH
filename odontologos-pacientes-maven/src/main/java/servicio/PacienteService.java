@@ -21,7 +21,7 @@ public class PacienteService {
         interfazDAO.eliminarPorId(id);
     }
 
-    public List<Paciente> listarTodos() {
+    public List<Paciente> listar() {
         return interfazDAO.listar();
     }
 

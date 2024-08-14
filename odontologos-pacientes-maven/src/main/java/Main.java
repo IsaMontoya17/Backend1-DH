@@ -27,9 +27,19 @@ public class Main {
         Odontologo odontologo1 = new Odontologo("García", "Luis", "MAT1234");
         Odontologo odontologo2 = new Odontologo("Martínez", "Ana", "MAT5678");
 
+        //guardar
         pacienteService.guardar(paciente1);
+        pacienteService.guardar(paciente2);
+        pacienteService.guardar(paciente3);
 
-        System.out.println("Este es el paciente original");
+        System.out.println("----------------------------------");
+
+        odontologoService.guardar(odontologo1);
+        odontologoService.guardar(odontologo2);
+
+        System.out.println("----------------------------------");
+
+        /*System.out.println("Este es el paciente original");
         System.out.println(paciente1.toString());
 
         paciente1.setNombre("Daniela");
@@ -38,14 +48,11 @@ public class Main {
         System.out.println("Este es el paciente modificado");
         System.out.println(paciente1.toString());
 
-        pacienteService.guardar(paciente2);
-        pacienteService.guardar(paciente3);
+         */
 
-        pacienteService.listarTodos();
-
-        odontologoService.guardar(odontologo1);
-        odontologoService.guardar(odontologo2);
-
+        //listar
+        pacienteService.listar();
+        System.out.println("----------------------------------");
         odontologoService.listar();
 
     }

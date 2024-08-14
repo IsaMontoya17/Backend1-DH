@@ -15,10 +15,10 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
 
     @Override
     public Paciente guardar(Paciente paciente) {
+        LOGGER.info("Comenzamos a persistir un paciente");
         Connection connection = null;
 
         try {
-            LOGGER.info("Estamos guardando un paciente");
 
             connection = BD.getConnection();
 
@@ -40,25 +40,24 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
 
             while (rs.next()) {
                 paciente.setId(rs.getInt(1));
-                System.out.println("Se guardó el paciente con nombre " +
-                        paciente.getNombre());
+                LOGGER.info("paciente guardado: " + paciente.getNombre() + " " + paciente.getApellido());
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        }  catch (Exception e) {
+            LOGGER.error("Error al guardar paciente", e);
         } finally {
             try {
                 connection.close();
             } catch (Exception ex) {
-                ex.printStackTrace();
+                LOGGER.error("Error al cerrar la conexión", ex);
             }
         }
-        LOGGER.info("Guardamos el paciente con nombre " + paciente.getNombre());
         return paciente;
     }
 
     @Override
     public List<Paciente> listar() {
+        LOGGER.info("Comenzamos a listar los pacientes");
         Connection connection = null;
 
         List<Paciente> pacienteList = new ArrayList<>();
@@ -80,18 +79,31 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
 
                 pacienteList.add(paciente);
 
-                System.out.println(paciente.toString());
+                LOGGER.info("Paciente encontrado: ID = " + paciente.getId() +
+                        ", Apellido = " + paciente.getApellido() +
+                        ", Nombre = " + paciente.getNombre() +
+                        ", Domicilio = " + paciente.getDomicilio() +
+                        ", DNI = " + paciente.getDni() +
+                        ", Fecha de alta = " + paciente.getFechaAlta()
+                );
+            }
+
+            if (pacienteList.isEmpty()) {
+                LOGGER.info("No se encontró ningún paciente.");
+            } else {
+                LOGGER.info("Se listaron " + pacienteList.size() + " pacientes.");
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error("Error al listar los pacientes", e);
         } finally {
             try {
                 connection.close();
             } catch (Exception ex) {
-                ex.printStackTrace();
+                LOGGER.error("Error al cerrar la conexión", ex);
             }
         }
+
         return pacienteList;
     }
 
