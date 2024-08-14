@@ -1,0 +1,48 @@
+[2024-08-13 20:51:36] [ INFO ] [ImplementacionDaoH2:21] Estamos guardando un paciente
+[2024-08-13 20:51:36] [ INFO ] [ImplementacionDaoH2:60] Guardamos el paciente con nombre Erica
+[2024-08-13 20:51:36] [ INFO ] [ImplementacionDaoH2:21] Estamos guardando un paciente
+[2024-08-13 20:51:36] [ INFO ] [ImplementacionDaoH2:60] Guardamos el paciente con nombre Bruno
+[2024-08-13 20:51:36] [ INFO ] [ImplementacionDaoH2:21] Estamos guardando un paciente
+[2024-08-13 20:51:36] [ INFO ] [ImplementacionDaoH2:60] Guardamos el paciente con nombre Israel
+[2024-08-13 20:52:34] [ INFO ] [ImplementacionDaoH2:21] Estamos guardando un paciente
+[2024-08-13 20:52:34] [ INFO ] [ImplementacionDaoH2:60] Guardamos el paciente con nombre Erica
+[2024-08-13 20:52:34] [ INFO ] [ImplementacionDaoH2:21] Estamos guardando un paciente
+[2024-08-13 20:52:34] [ INFO ] [ImplementacionDaoH2:60] Guardamos el paciente con nombre Bruno
+[2024-08-13 20:52:34] [ INFO ] [ImplementacionDaoH2:21] Estamos guardando un paciente
+[2024-08-13 20:52:34] [ INFO ] [ImplementacionDaoH2:60] Guardamos el paciente con nombre Israel
+[2024-08-13 20:55:05] [ INFO ] [ImplementacionDaoH2:21] Estamos guardando un paciente
+[2024-08-13 20:55:05] [ INFO ] [ImplementacionDaoH2:56] Guardamos el paciente con nombre Erica
+[2024-08-13 20:55:05] [ INFO ] [ImplementacionDaoH2:21] Estamos guardando un paciente
+[2024-08-13 20:55:05] [ INFO ] [ImplementacionDaoH2:56] Guardamos el paciente con nombre Bruno
+[2024-08-13 20:55:05] [ INFO ] [ImplementacionDaoH2:21] Estamos guardando un paciente
+[2024-08-13 20:55:05] [ INFO ] [ImplementacionDaoH2:56] Guardamos el paciente con nombre Israel
+[2024-08-13 21:03:41] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-13 21:03:41] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-13 21:03:41] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-13 21:03:41] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-13 21:03:41] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-13 21:03:41] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-13 21:03:41] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-13 21:03:41] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-13 21:03:50] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-13 21:03:50] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-13 21:03:50] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-13 21:03:50] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-13 21:03:50] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-13 21:03:50] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-13 21:03:50] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-13 21:03:50] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
+[2024-08-13 21:07:19] [ INFO ] [PacienteDaoH2:21] Estamos guardando un paciente
+[2024-08-13 21:07:19] [ INFO ] [PacienteDaoH2:56] Guardamos el paciente con nombre Erica
+[2024-08-13 21:07:19] [ INFO ] [PacienteDaoH2:21] Estamos guardando un paciente
+[2024-08-13 21:07:19] [ INFO ] [PacienteDaoH2:56] Guardamos el paciente con nombre Bruno
+[2024-08-13 21:07:19] [ INFO ] [PacienteDaoH2:21] Estamos guardando un paciente
+[2024-08-13 21:07:19] [ INFO ] [PacienteDaoH2:56] Guardamos el paciente con nombre Israel
+[2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Luis García
+[2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:20] Comenzamos a persistir un odontólogo
+[2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:40] Odontólogo guardado: Ana Martínez
+[2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:57] Comenzamos a listar los odontólogos
+[2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 1, Apellido = García, Nombre = Luis, Matrícula = MAT1234
+[2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 2, Apellido = Martínez, Nombre = Ana, Matrícula = MAT5678
+[2024-08-13 21:07:19] [ INFO ] [OdontologoDaoH2:87] Se listaron 2 odontólogos.
