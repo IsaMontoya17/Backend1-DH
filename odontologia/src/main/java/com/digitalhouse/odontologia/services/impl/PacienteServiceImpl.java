@@ -3,13 +3,14 @@ package com.digitalhouse.odontologia.services.impl;
 import com.digitalhouse.odontologia.dao.IDAO;
 import com.digitalhouse.odontologia.dao.impl.PacienteDaoH2;
 import com.digitalhouse.odontologia.domain.Paciente;
+import com.digitalhouse.odontologia.services.IPacienteService;
 
 import java.util.List;
 
-public class PacienteService {
+public class PacienteServiceImpl implements IPacienteService {
     private IDAO<Paciente> interfazDAO;
 
-    public PacienteService() {
+    public PacienteServiceImpl() {
         this.interfazDAO = new PacienteDaoH2();
     }
 

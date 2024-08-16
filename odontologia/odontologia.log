@@ -1,0 +1,30 @@
+[2024-08-15 21:55:10] [ INFO ] [BD:30] Estamos insertando un odontologo en la tabla odontologos
+[2024-08-15 22:13:12] [ INFO ] [BD:30] Estamos insertando un odontologo en la tabla odontologos
+[2024-08-15 22:13:28] [ INFO ] [OdontologoDaoH2:125] Odontólogo encontrado: ID = 1, Apellido = Toro, Nombre = Daniela, Matrícula = 123
+[2024-08-15 22:13:31] [ INFO ] [OdontologoDaoH2:125] Odontólogo encontrado: ID = 1, Apellido = Toro, Nombre = Daniela, Matrícula = 123
+[2024-08-15 22:13:58] [ INFO ] [BD:30] Estamos insertando un odontologo en la tabla odontologos
+[2024-08-15 22:30:48] [ INFO ] [BD:36] Estamos insertando un odontologo en la tabla odontologos
+[2024-08-15 22:30:48] [ INFO ] [OdontologoDaoH2:106] holis
+[2024-08-15 22:30:48] [ INFO ] [OdontologoDaoH2:127] Odontólogo encontrado: ID = 1, Apellido = Daniela, Nombre = Toro, Matrícula = 123
+[2024-08-15 22:34:23] [ INFO ] [BD:33] Estamos insertando un odontologo en la tabla odontologos
+[2024-08-15 22:36:07] [ INFO ] [BD:33] Estamos insertando un odontologo en la tabla odontologos
+[2024-08-15 22:41:18] [ INFO ] [OdontologoController:27] buscarOdontologoPorId en OdontologoController
+[2024-08-15 22:41:18] [ INFO ] [OdontologoServiceImpl:27] buscar id en OdontologoServiceImpl
+[2024-08-15 22:41:18] [ INFO ] [OdontologoDaoH2:106] holis
+[2024-08-15 22:41:18] [ INFO ] [OdontologoDaoH2:127] Odontólogo encontrado: ID = 1, Apellido = Daniela, Nombre = Toro, Matrícula = 123
+[2024-08-15 22:41:22] [ INFO ] [OdontologoController:27] buscarOdontologoPorId en OdontologoController
+[2024-08-15 22:41:22] [ INFO ] [OdontologoServiceImpl:27] buscar id en OdontologoServiceImpl
+[2024-08-15 22:41:22] [ INFO ] [OdontologoDaoH2:106] holis
+[2024-08-15 22:41:22] [ WARN ] [OdontologoDaoH2:132] No se encontró ningún odontólogo con el ID: 2
+[2024-08-15 22:41:27] [ INFO ] [OdontologoController:27] buscarOdontologoPorId en OdontologoController
+[2024-08-15 22:41:27] [ INFO ] [OdontologoServiceImpl:27] buscar id en OdontologoServiceImpl
+[2024-08-15 22:41:27] [ INFO ] [OdontologoDaoH2:106] holis
+[2024-08-15 22:41:27] [ INFO ] [OdontologoDaoH2:127] Odontólogo encontrado: ID = 1, Apellido = Daniela, Nombre = Toro, Matrícula = 123
+[2024-08-15 22:42:54] [ INFO ] [OdontologoController:27] buscarOdontologoPorId en OdontologoController
+[2024-08-15 22:42:54] [ INFO ] [OdontologoServiceImpl:27] buscar id en OdontologoServiceImpl
+[2024-08-15 22:42:54] [ INFO ] [OdontologoDaoH2:106] holis
+[2024-08-15 22:42:54] [ WARN ] [OdontologoDaoH2:132] No se encontró ningún odontólogo con el ID: 2
+[2024-08-15 22:45:06] [ INFO ] [OdontologoController:27] buscarOdontologoPorId en OdontologoController
+[2024-08-15 22:45:06] [ INFO ] [OdontologoServiceImpl:27] buscar id en OdontologoServiceImpl
+[2024-08-15 22:45:06] [ INFO ] [OdontologoDaoH2:106] holis
+[2024-08-15 22:45:06] [ INFO ] [OdontologoDaoH2:127] Odontólogo encontrado: ID = 1, Apellido = Daniela, Nombre = Toro, Matrícula = 123

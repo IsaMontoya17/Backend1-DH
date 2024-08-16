@@ -102,8 +102,49 @@ public class OdontologoDaoH2 implements IDAO<Odontologo> {
 
     @Override
     public Odontologo consultarPorId(Integer id) {
-        return null;
+
+        Connection connection = null;
+        Odontologo odontologo = null;
+
+        try {
+            connection = BD.getConnection();
+
+            PreparedStatement psBuscarPorId = connection.prepareStatement(
+                    "SELECT * FROM ODONTOLOGOS WHERE ID=?"
+            );
+            psBuscarPorId.setInt(1, id);
+            ResultSet rs = psBuscarPorId.executeQuery();
+
+            if (rs.next()) {
+                odontologo = new Odontologo();
+                odontologo.setId(rs.getInt(1));
+                odontologo.setApellido(rs.getString(2));
+                odontologo.setNombre(rs.getString(3));
+                odontologo.setMatricula(rs.getString(4));
+
+                LOGGER.info("Odontólogo encontrado: ID = " + odontologo.getId() +
+                        ", Apellido = " + odontologo.getApellido() +
+                        ", Nombre = " + odontologo.getNombre() +
+                        ", Matrícula = " + odontologo.getMatricula());
+            } else {
+                LOGGER.warn("No se encontró ningún odontólogo con el ID: " + id);
+            }
+
+        } catch (Exception e) {
+            LOGGER.error("Error al consultar el odontólogo por ID: " + id, e);
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (Exception ex) {
+                LOGGER.error("Error al cerrar la conexión", ex);
+            }
+        }
+
+        return odontologo;
     }
+
 
     @Override
     public void eliminarPorId(Integer id) {
