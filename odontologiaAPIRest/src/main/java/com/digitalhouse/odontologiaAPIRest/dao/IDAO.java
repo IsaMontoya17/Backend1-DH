@@ -10,7 +10,10 @@ public interface IDAO<T> {
 
     T consultarPorId(Integer id);
 
-    void eliminarPorId(Integer id);
+    Boolean eliminarPorId(Integer id);
 
     T actualizar(T t);
-}
+
+    /*T actualizar(T t, String string1, String string2);*/
+
+}//CIERRE DE LA CLASE

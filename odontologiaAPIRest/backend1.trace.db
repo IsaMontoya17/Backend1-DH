@@ -1,0 +1,9 @@
+2024-08-21 11:14:50.587007-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "MAT-125"
+Data conversion error converting "MAT-125" [22018-224]
+2024-08-21 11:15:00.591701-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "MAT-125"
+Data conversion error converting "MAT-125" [22018-224]
+2024-08-21 12:03:35.683306-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "MAT-1"
+Data conversion error converting "MAT-1" [22018-224]

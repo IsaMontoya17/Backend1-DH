@@ -8,8 +8,6 @@ import java.sql.Statement;
 
 public class BD {
 
-    private static final String SQL_INSERT_ODONTOLOGO = "INSERT INTO ODONTOLOGOS (APELLIDO, NOMBRE, MATRICULA) " +
-            "VALUES ('Daniela', 'Toro', '123')";
     public static Connection getConnection() throws Exception {
         Class.forName("org.h2.Driver");
         return DriverManager.getConnection("jdbc:h2:./backend1", "sa", "sa");
@@ -25,9 +23,6 @@ public class BD {
             statement.execute(sqlScript);
             System.out.println("Script SQL ejecutado con éxito.");
 
-            //-----------------------------------------
-            statement.execute(SQL_INSERT_ODONTOLOGO);
-
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -41,4 +36,4 @@ public class BD {
         }
     }
 
-}
+}//CIERRE DE LA CLASE

@@ -14,12 +14,10 @@ public class PacienteServiceImpl implements IPacienteService {
         this.interfazDAO = new PacienteDaoH2();
     }
 
-    public Paciente guardar(Paciente paciente) {
-        return interfazDAO.guardar(paciente);
-    }
+    public Paciente guardar(Paciente paciente) { return interfazDAO.guardar(paciente); }
 
-    public void eliminar(Integer id){
-        interfazDAO.eliminarPorId(id);
+    public Boolean eliminar(Integer id){
+         return interfazDAO.eliminarPorId(id);
     }
 
     public List<Paciente> listar() {
@@ -34,4 +32,4 @@ public class PacienteServiceImpl implements IPacienteService {
         return interfazDAO.actualizar(paciente);
     }
 
-}
+}//CIERRE DE LA CLASE

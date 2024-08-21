@@ -28,6 +28,9 @@ public class Paciente {
         this.fechaAlta = fechaAlta;
     }
 
+    public Paciente() {
+    }
+
     public Integer getId() {
         return id;
     }
@@ -88,4 +91,4 @@ public class Paciente {
                 '}';
     }
 
-}
+}//CIERRE DE LA CLASE

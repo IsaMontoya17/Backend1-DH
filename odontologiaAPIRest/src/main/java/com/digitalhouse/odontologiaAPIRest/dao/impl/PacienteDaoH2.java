@@ -12,6 +12,11 @@ import java.util.List;
 public class PacienteDaoH2 implements IDAO<Paciente> {
 
     private static final Logger LOGGER = Logger.getLogger(PacienteDaoH2.class);
+    private static final String INSERTAR = "INSERT INTO PACIENTES (NOMBRE, APELLIDO, DOMICILIO, DNI, FECHA_ALTA) VALUES (?,?,?,?,?)";
+    private static final String lISTAR = "SELECT * FROM PACIENTES";
+    private static final String CONSULTA_POR_ID = "SELECT * FROM PACIENTES WHERE ID=?";
+    private static final String BORRAR_POR_ID = "DELETE FROM PACIENTES WHERE ID=?";
+    private static final String ACTUALIZAR = "UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, DOMICILIO=?, DNI=?, FECHA_ALTA=? WHERE ID=?";
 
     @Override
     public Paciente guardar(Paciente paciente) {
@@ -19,14 +24,9 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
         Connection connection = null;
 
         try {
-
             connection = BD.getConnection();
 
-            PreparedStatement preparedStatement = connection.prepareStatement(
-                    "INSERT INTO PACIENTES (" +
-                            "NOMBRE, APELLIDO, DOMICILIO, DNI, FECHA_ALTA) VALUES " +
-                            "(?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS
-            );
+            PreparedStatement preparedStatement = connection.prepareStatement(INSERTAR, Statement.RETURN_GENERATED_KEYS);
 
             preparedStatement.setString(1, paciente.getNombre());
             preparedStatement.setString(2, paciente.getApellido());
@@ -66,9 +66,7 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
         try {
             connection = BD.getConnection();
 
-            PreparedStatement preparedStatement = connection.prepareStatement(
-                    "SELECT * FROM PACIENTES"
-            );
+            PreparedStatement preparedStatement = connection.prepareStatement(lISTAR);
 
             ResultSet rs = preparedStatement.executeQuery();
 
@@ -110,78 +108,124 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
     @Override
     public Paciente consultarPorId(Integer id) {
         Connection connection = null;
-
-        try {
-
-
-
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                connection.close();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
-        }
-        return null;
-    }
-
-    @Override
-    public void eliminarPorId(Integer id) {
-        Connection connection = null;
-
-        try {
-
-
-
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                connection.close();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
-        }
-    }
-
-    @Override
-    public Paciente actualizar(Paciente paciente) {
-        Connection connection = null;
+        Paciente paciente = null;
 
         try {
             connection = BD.getConnection();
 
-            PreparedStatement preparedStatement = connection.prepareStatement(
-                    "UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, DOMICILIO=?," +
-                            "DNI=?, FECHA_ALTA=? WHERE ID=?"
-            );
+            PreparedStatement psBuscarPorId = connection.prepareStatement(CONSULTA_POR_ID);
+            psBuscarPorId.setInt(1, id);
+            ResultSet rs = psBuscarPorId.executeQuery();
 
-            preparedStatement.setString(1,paciente.getNombre());
-            preparedStatement.setString(2,paciente.getApellido());
+            if (rs.next()) {
+                paciente = new Paciente(rs.getInt("ID"),
+                        rs.getString("APELLIDO"),
+                        rs.getString("NOMBRE"),
+                        rs.getString("DOMICILIO"),
+                        rs.getString("DNI"),
+                        rs.getDate("FECHA_ALTA").toLocalDate());
+
+                LOGGER.info("Paciente encontrado: ID = " + paciente.getId() +
+                        ", Apellido = " + paciente.getApellido() +
+                        ", Nombre = " + paciente.getNombre() +
+                        ", Domicilio = " + paciente.getDomicilio() +
+                        ", DNI = " + paciente.getDni() +
+                        ", Fecha de alta = " + paciente.getFechaAlta());
+            } else {
+                LOGGER.warn("No se encontró ningún paciente con el ID: " + id);
+            }
+
+        } catch (Exception e) {
+            LOGGER.error("Error al consultar el paciente por ID: " + id, e);
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (Exception ex) {
+                LOGGER.error("Error al cerrar la conexión", ex);
+            }
+        }
+
+        return paciente;
+    }
+
+    @Override
+    public Boolean eliminarPorId(Integer id) {
+        Connection connection = null;
+        Boolean eliminado = false;
+
+        try {
+            connection = BD.getConnection();
+
+            PreparedStatement psEliminarPorId = connection.prepareStatement(BORRAR_POR_ID);
+            psEliminarPorId.setInt(1, id);
+
+            int filasBorradas = psEliminarPorId.executeUpdate();
+
+            if (filasBorradas > 0) {
+                LOGGER.info("Paciente con ID " + id + " eliminado correctamente.");
+                eliminado = true;
+            } else {
+                LOGGER.warn("No se encontró ningún paciente con el ID: " + id);
+            }
+
+        } catch (Exception e) {
+            LOGGER.error("Error al eliminar el paciente por ID: " + id, e);
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (Exception ex) {
+                LOGGER.error("Error al cerrar la conexión", ex);
+            }
+        }
+        return eliminado;
+    }
+
+
+    @Override
+    public Paciente actualizar(Paciente paciente) {
+        Connection connection = null;
+        try {
+            connection = BD.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(ACTUALIZAR);
+
+            preparedStatement.setString(1, paciente.getNombre());
+            preparedStatement.setString(2, paciente.getApellido());
             preparedStatement.setString(3, paciente.getDomicilio());
             preparedStatement.setString(4, paciente.getDni());
             preparedStatement.setDate(5, Date.valueOf(paciente.getFechaAlta()));
             preparedStatement.setInt(6, paciente.getId());
 
-            preparedStatement.execute();
+            int filasAfectadas = preparedStatement.executeUpdate();
 
-            System.out.println("Este es el nuevo nombre del paciente" + paciente.getNombre());
+            if (filasAfectadas > 0) {
+                LOGGER.info("Paciente actualizado correctamente: ");
+                LOGGER.info("ID: " + paciente.getId());
+                LOGGER.info("Nombre: " + paciente.getNombre());
+                LOGGER.info("Apellido: " + paciente.getApellido());
+                LOGGER.info("Domicilio: " + paciente.getDomicilio());
+                LOGGER.info("DNI: " + paciente.getDni());
+                LOGGER.info("Fecha de Alta: " + paciente.getFechaAlta());
+            } else {
+                LOGGER.warn("No se encontró ningún paciente con el ID: " + paciente.getId());
+            }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error("Error al actualizar el paciente con ID: " + paciente.getId(), e);
         } finally {
             try {
-                connection.close();
+                if (connection != null) {
+                    connection.close();
+                }
             } catch (Exception ex) {
-                ex.printStackTrace();
+                LOGGER.error("Error al cerrar la conexión", ex);
             }
         }
         return paciente;
     }
-}
+
+}//CIERRE DE LA CLASE

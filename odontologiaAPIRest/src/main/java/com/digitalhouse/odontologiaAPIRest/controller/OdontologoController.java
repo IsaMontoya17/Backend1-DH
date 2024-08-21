@@ -34,4 +34,14 @@ public class OdontologoController {
         return ResponseEntity.ok(odontologoServiceImpl.listar());
     }
 
-}
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> eliminar(@PathVariable Integer id) {
+        boolean eliminado = odontologoServiceImpl.eliminar(id);
+        if (eliminado) {
+            return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+}//CIERRE DE LA CLASE

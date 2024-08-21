@@ -14,3 +14,283 @@
 [2024-08-20 20:59:52] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 3, Apellido = montoya, Nombre = isabela1, Matrícula = MAT-124
 [2024-08-20 20:59:52] [ INFO ] [OdontologoDaoH2:78] Odontólogo encontrado: ID = 4, Apellido = montoya, Nombre = isabela2, Matrícula = MAT-125
 [2024-08-20 20:59:52] [ INFO ] [OdontologoDaoH2:87] Se listaron 4 odontólogos.
+[2024-08-21 11:14:13] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 11:14:13] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela2 montoya
+[2024-08-21 11:14:25] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 11:14:25] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela1 montoya
+[2024-08-21 11:14:31] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 11:14:31] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela12 montoya
+[2024-08-21 11:14:39] [ INFO ] [OdontologoServiceImpl:27] buscar id en OdontologoServiceImpl
+[2024-08-21 11:14:39] [ INFO ] [OdontologoDaoH2:124] Odontólogo encontrado: ID = 3, Apellido = montoya, Nombre = isabela12, Matrícula = MAT-120
+[2024-08-21 11:14:47] [ INFO ] [OdontologoServiceImpl:27] buscar id en OdontologoServiceImpl
+[2024-08-21 11:14:47] [ INFO ] [OdontologoDaoH2:124] Odontólogo encontrado: ID = 1, Apellido = montoya, Nombre = isabela2, Matrícula = MAT-125
+[2024-08-21 11:14:50] [ INFO ] [OdontologoDaoH2:61] Comenzamos a listar los odontólogos
+[2024-08-21 11:14:50] [ ERROR] [OdontologoDaoH2:92] Error al listar los odontólogos
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "MAT-125"
+Data conversion error converting "MAT-125" [22018-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at com.digitalhouse.odontologiaAPIRest.dao.impl.OdontologoDaoH2.listar(OdontologoDaoH2.java:75)
+	at com.digitalhouse.odontologiaAPIRest.services.impl.OdontologoServiceImpl.listar(OdontologoServiceImpl.java:42)
+	at com.digitalhouse.odontologiaAPIRest.controller.OdontologoController.listarTodos(OdontologoController.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NumberFormatException: For input string: "MAT-125"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:661)
+	at java.base/java.lang.Integer.parseInt(Integer.java:777)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 53 more
+[2024-08-21 11:15:00] [ INFO ] [OdontologoDaoH2:61] Comenzamos a listar los odontólogos
+[2024-08-21 11:15:00] [ ERROR] [OdontologoDaoH2:92] Error al listar los odontólogos
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "MAT-125"
+Data conversion error converting "MAT-125" [22018-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at com.digitalhouse.odontologiaAPIRest.dao.impl.OdontologoDaoH2.listar(OdontologoDaoH2.java:75)
+	at com.digitalhouse.odontologiaAPIRest.services.impl.OdontologoServiceImpl.listar(OdontologoServiceImpl.java:42)
+	at com.digitalhouse.odontologiaAPIRest.controller.OdontologoController.listarTodos(OdontologoController.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NumberFormatException: For input string: "MAT-125"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:661)
+	at java.base/java.lang.Integer.parseInt(Integer.java:777)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 53 more
+[2024-08-21 11:20:24] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 11:20:25] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela montoya
+[2024-08-21 11:20:29] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 11:20:29] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela1 montoya
+[2024-08-21 11:20:35] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 11:20:35] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela2 montoya
+[2024-08-21 11:20:38] [ INFO ] [OdontologoDaoH2:61] Comenzamos a listar los odontólogos
+[2024-08-21 11:20:38] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 1, Apellido = montoya, Nombre = isabela, Matrícula = MAT-0
+[2024-08-21 11:20:38] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 2, Apellido = montoya, Nombre = isabela1, Matrícula = MAT-1
+[2024-08-21 11:20:38] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 3, Apellido = montoya, Nombre = isabela2, Matrícula = MAT-2
+[2024-08-21 11:20:38] [ INFO ] [OdontologoDaoH2:92] Se listaron 3 odontólogos.
+[2024-08-21 11:42:11] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 11:42:11] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela2 montoya
+[2024-08-21 11:42:17] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 11:42:17] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela montoya
+[2024-08-21 11:42:21] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 11:42:21] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela1 montoya
+[2024-08-21 11:42:24] [ INFO ] [OdontologoDaoH2:61] Comenzamos a listar los odontólogos
+[2024-08-21 11:42:24] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 1, Apellido = montoya, Nombre = isabela2, Matrícula = MAT-2
+[2024-08-21 11:42:24] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 2, Apellido = montoya, Nombre = isabela, Matrícula = MAT-0
+[2024-08-21 11:42:24] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 3, Apellido = montoya, Nombre = isabela1, Matrícula = MAT-1
+[2024-08-21 11:42:24] [ INFO ] [OdontologoDaoH2:92] Se listaron 3 odontólogos.
+[2024-08-21 11:42:28] [ INFO ] [OdontologoDaoH2:128] Odontólogo encontrado: ID = 1, Apellido = montoya, Nombre = isabela2, Matrícula = MAT-2
+[2024-08-21 11:42:38] [ INFO ] [OdontologoDaoH2:128] Odontólogo encontrado: ID = 1, Apellido = montoya, Nombre = isabela2, Matrícula = MAT-2
+[2024-08-21 11:42:41] [ INFO ] [OdontologoDaoH2:166] Odontólogo con ID 1 eliminado correctamente.
+[2024-08-21 11:42:56] [ INFO ] [OdontologoDaoH2:61] Comenzamos a listar los odontólogos
+[2024-08-21 11:42:56] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 2, Apellido = montoya, Nombre = isabela, Matrícula = MAT-0
+[2024-08-21 11:42:56] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 3, Apellido = montoya, Nombre = isabela1, Matrícula = MAT-1
+[2024-08-21 11:42:56] [ INFO ] [OdontologoDaoH2:92] Se listaron 2 odontólogos.
+[2024-08-21 12:03:22] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 12:03:22] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela1 montoya
+[2024-08-21 12:03:27] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 12:03:27] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela2 montoya
+[2024-08-21 12:03:32] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 12:03:32] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela3 montoya
+[2024-08-21 12:03:35] [ ERROR] [OdontologoDaoH2:133] Error al consultar el odontólogo por ID: 1
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "MAT-1"
+Data conversion error converting "MAT-1" [22018-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at com.digitalhouse.odontologiaAPIRest.dao.impl.OdontologoDaoH2.consultarPorId(OdontologoDaoH2.java:122)
+	at com.digitalhouse.odontologiaAPIRest.dao.impl.OdontologoDaoH2.consultarPorId(OdontologoDaoH2.java:16)
+	at com.digitalhouse.odontologiaAPIRest.services.impl.OdontologoServiceImpl.buscarPorId(OdontologoServiceImpl.java:25)
+	at com.digitalhouse.odontologiaAPIRest.controller.OdontologoController.buscarPorId(OdontologoController.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NumberFormatException: For input string: "MAT-1"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:661)
+	at java.base/java.lang.Integer.parseInt(Integer.java:777)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 54 more
+[2024-08-21 12:14:05] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 12:14:05] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela montoya
+[2024-08-21 12:14:12] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 12:14:12] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela2 montoya
+[2024-08-21 12:14:17] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 12:14:17] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela3 montoya
+[2024-08-21 12:14:20] [ INFO ] [OdontologoDaoH2:127] Odontólogo encontrado: ID = 1, Apellido = montoya, Nombre = isabela, Matrícula = MAT-1
+[2024-08-21 12:14:26] [ INFO ] [OdontologoDaoH2:127] Odontólogo encontrado: ID = 3, Apellido = montoya, Nombre = isabela3, Matrícula = MAT-3
+[2024-08-21 12:14:30] [ INFO ] [OdontologoDaoH2:61] Comenzamos a listar los odontólogos
+[2024-08-21 12:14:30] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 1, Apellido = montoya, Nombre = isabela, Matrícula = MAT-1
+[2024-08-21 12:14:30] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 2, Apellido = montoya, Nombre = isabela2, Matrícula = MAT-2
+[2024-08-21 12:14:30] [ INFO ] [OdontologoDaoH2:83] Odontólogo encontrado: ID = 3, Apellido = montoya, Nombre = isabela3, Matrícula = MAT-3
+[2024-08-21 12:14:30] [ INFO ] [OdontologoDaoH2:92] Se listaron 3 odontólogos.
+[2024-08-21 13:27:36] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 13:27:36] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela3 montoya
+[2024-08-21 13:33:56] [ INFO ] [OdontologoDaoH2:26] Comenzamos a persistir un odontólogo
+[2024-08-21 13:33:56] [ INFO ] [OdontologoDaoH2:44] Odontólogo guardado: isabela3 montoya
+[2024-08-21 13:47:17] [ INFO ] [PacienteDaoH2:23] Comenzamos a persistir un paciente
+[2024-08-21 13:47:17] [ INFO ] [PacienteDaoH2:43] paciente guardado: Juan Pérez
+[2024-08-21 13:47:45] [ INFO ] [PacienteDaoH2:23] Comenzamos a persistir un paciente
+[2024-08-21 13:47:45] [ INFO ] [PacienteDaoH2:43] paciente guardado: Isa Montoya
+[2024-08-21 13:49:12] [ INFO ] [PacienteDaoH2:60] Comenzamos a listar los pacientes
+[2024-08-21 13:49:12] [ INFO ] [PacienteDaoH2:80] Paciente encontrado: ID = 1, Apellido = Pérez, Nombre = Juan, Domicilio = Calle Falsa 123, DNI = 12345678, Fecha de alta = 2024-08-21
+[2024-08-21 13:49:12] [ INFO ] [PacienteDaoH2:80] Paciente encontrado: ID = 2, Apellido = Montoya, Nombre = Isa, Domicilio = Calle Falsa 321, DNI = 87654321, Fecha de alta = 2024-03-17
+[2024-08-21 13:49:12] [ INFO ] [PacienteDaoH2:92] Se listaron 2 pacientes.
+[2024-08-21 13:49:57] [ WARN ] [OdontologoDaoH2:131] No se encontró ningún odontólogo con el ID: 1
+[2024-08-21 13:50:09] [ INFO ] [PacienteDaoH2:128] Paciente encontrado: ID = 1, Apellido = Juan, Nombre = Pérez, Domicilio = Calle Falsa 123, DNI = 12345678, Fecha de alta = 2024-08-21
+[2024-08-21 13:50:13] [ INFO ] [PacienteDaoH2:128] Paciente encontrado: ID = 2, Apellido = Isa, Nombre = Montoya, Domicilio = Calle Falsa 321, DNI = 87654321, Fecha de alta = 2024-03-17
+[2024-08-21 13:51:30] [ INFO ] [PacienteDaoH2:167] Paciente con ID 1 eliminado correctamente.
+[2024-08-21 13:51:36] [ INFO ] [PacienteDaoH2:128] Paciente encontrado: ID = 2, Apellido = Isa, Nombre = Montoya, Domicilio = Calle Falsa 321, DNI = 87654321, Fecha de alta = 2024-03-17
+[2024-08-21 13:51:40] [ WARN ] [PacienteDaoH2:135] No se encontró ningún paciente con el ID: 1
+[2024-08-21 13:51:46] [ INFO ] [PacienteDaoH2:60] Comenzamos a listar los pacientes
+[2024-08-21 13:51:46] [ INFO ] [PacienteDaoH2:80] Paciente encontrado: ID = 2, Apellido = Montoya, Nombre = Isa, Domicilio = Calle Falsa 321, DNI = 87654321, Fecha de alta = 2024-03-17
+[2024-08-21 13:51:46] [ INFO ] [PacienteDaoH2:92] Se listaron 1 pacientes.
