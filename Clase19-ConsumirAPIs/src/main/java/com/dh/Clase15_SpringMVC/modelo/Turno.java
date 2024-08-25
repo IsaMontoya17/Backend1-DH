@@ -1,22 +1,12 @@
-package com.digitalhouse.odontologiaAPIRest.domain;
+package com.dh.Clase15_SpringMVC.modelo;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 public class Turno {
-    private static Integer id=0;
+    private Integer id;
     private Odontologo odontologo;
     private Paciente paciente;
     private LocalDate fecha;
-    private LocalTime hora;
-
-    public Turno(Odontologo odontologo, Paciente paciente, LocalDate fecha, LocalTime hora) {
-        this.odontologo = odontologo;
-        this.paciente = paciente;
-        this.fecha = fecha;
-        this.hora = hora;
-        id++;
-    }
 
     public Integer getId() {
         return id;
@@ -48,13 +38,5 @@ public class Turno {
 
     public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
-    }
-
-    public LocalTime getHora() {
-        return hora;
-    }
-
-    public void setHora(LocalTime hora) {
-        this.hora = hora;
     }
 }

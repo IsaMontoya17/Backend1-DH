@@ -1,6 +1,7 @@
 package com.digitalhouse.odontologiaAPIRest.dao.impl;
 
 import com.digitalhouse.odontologiaAPIRest.dao.BD;
+import com.digitalhouse.odontologiaAPIRest.domain.Domicilio;
 import org.apache.log4j.Logger;
 import com.digitalhouse.odontologiaAPIRest.domain.Paciente;
 import com.digitalhouse.odontologiaAPIRest.dao.IDAO;
@@ -12,7 +13,8 @@ import java.util.List;
 public class PacienteDaoH2 implements IDAO<Paciente> {
 
     private static final Logger LOGGER = Logger.getLogger(PacienteDaoH2.class);
-    private static final String INSERTAR = "INSERT INTO PACIENTES (NOMBRE, APELLIDO, DOMICILIO, DNI, FECHA_ALTA) VALUES (?,?,?,?,?)";
+    DomicilioDaoH2 domicilioDaoH2 = new DomicilioDaoH2();
+    private static final String INSERTAR = "INSERT INTO PACIENTES (NOMBRE, APELLIDO, DOMICILIO_ID, DNI, FECHA_ALTA) VALUES (?,?,?,?,?)";
     private static final String lISTAR = "SELECT * FROM PACIENTES";
     private static final String CONSULTA_POR_ID = "SELECT * FROM PACIENTES WHERE ID=?";
     private static final String BORRAR_POR_ID = "DELETE FROM PACIENTES WHERE ID=?";
@@ -24,15 +26,16 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
         Connection connection = null;
 
         try {
+            domicilioDaoH2.guardar(paciente.getDomicilio());
             connection = BD.getConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement(INSERTAR, Statement.RETURN_GENERATED_KEYS);
 
             preparedStatement.setString(1, paciente.getNombre());
             preparedStatement.setString(2, paciente.getApellido());
-            preparedStatement.setString(3, paciente.getDomicilio());
-            preparedStatement.setString(4, paciente.getDni());
-            preparedStatement.setDate(5, Date.valueOf(paciente.getFechaAlta()));
+            preparedStatement.setString(3, paciente.getDni());
+            preparedStatement.setDate(4, Date.valueOf(paciente.getFechaAlta()));
+            preparedStatement.setInt(5, paciente.getDomicilio().getId());
 
             preparedStatement.execute();
 
@@ -71,9 +74,11 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
             ResultSet rs = preparedStatement.executeQuery();
 
             while(rs.next()) {
+                Domicilio domicilio = domicilioDaoH2.consultarPorId(rs.getInt(6));
+
                 paciente = new Paciente(rs.getInt(1), rs.getString(2),
-                        rs.getString(3), rs.getString(4), rs.getString(5),
-                        rs.getDate(6).toLocalDate());
+                        rs.getString(3), rs.getString(4),
+                        rs.getDate(5).toLocalDate(), domicilio);
 
                 pacienteList.add(paciente);
 
@@ -118,12 +123,11 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
             ResultSet rs = psBuscarPorId.executeQuery();
 
             if (rs.next()) {
-                paciente = new Paciente(rs.getInt("ID"),
-                        rs.getString("APELLIDO"),
-                        rs.getString("NOMBRE"),
-                        rs.getString("DOMICILIO"),
-                        rs.getString("DNI"),
-                        rs.getDate("FECHA_ALTA").toLocalDate());
+                Domicilio domicilio = domicilioDaoH2.consultarPorId(rs.getInt(6));
+
+                paciente = new Paciente(rs.getInt(1), rs.getString(2),
+                        rs.getString(3), rs.getString(4),
+                        rs.getDate(5).toLocalDate(), domicilio);
 
                 LOGGER.info("Paciente encontrado: ID = " + paciente.getId() +
                         ", Apellido = " + paciente.getApellido() +
@@ -195,7 +199,7 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
 
             preparedStatement.setString(1, paciente.getNombre());
             preparedStatement.setString(2, paciente.getApellido());
-            preparedStatement.setString(3, paciente.getDomicilio());
+            preparedStatement.setInt(3, paciente.getDomicilio().getId());
             preparedStatement.setString(4, paciente.getDni());
             preparedStatement.setDate(5, Date.valueOf(paciente.getFechaAlta()));
             preparedStatement.setInt(6, paciente.getId());

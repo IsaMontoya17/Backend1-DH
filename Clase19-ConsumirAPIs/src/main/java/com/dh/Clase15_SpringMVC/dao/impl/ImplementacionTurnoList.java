@@ -1,23 +1,24 @@
-package com.digitalhouse.odontologiaAPIRest.dao.impl;
+package com.dh.Clase15_SpringMVC.dao.impl;
 
-import com.digitalhouse.odontologiaAPIRest.dao.IDAO;
-import com.digitalhouse.odontologiaAPIRest.domain.Turno;
+import com.dh.Clase15_SpringMVC.dao.IDAO;
+import com.dh.Clase15_SpringMVC.modelo.Turno;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TurnoList implements IDAO<Turno> {
+public class ImplementacionTurnoList implements IDAO<Turno> {
 
     List<Turno> turnoList = new ArrayList<>();
 
     @Override
     public Turno guardar(Turno turno) {
+        //id lo vamos a cargar a mano
         turnoList.add(turno);
         return turno;
     }
 
     @Override
-    public List<Turno> listar() {
+    public List<Turno> listarTodos() {
         return turnoList;
     }
 
@@ -27,15 +28,17 @@ public class TurnoList implements IDAO<Turno> {
 
         for (Turno t: turnoList) {
             if(t.getId().equals(id)) {
+
                 return t;
             }
-        }
+         }
+
         return turnoBuscado;
     }
 
     @Override
-    public Boolean eliminarPorId(Integer id) {
-        return true;
+    public void eliminarPorId(Integer id) {
+
     }
 
     @Override

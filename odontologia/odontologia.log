@@ -28,3 +28,5 @@
 [2024-08-15 22:45:06] [ INFO ] [OdontologoServiceImpl:27] buscar id en OdontologoServiceImpl
 [2024-08-15 22:45:06] [ INFO ] [OdontologoDaoH2:106] holis
 [2024-08-15 22:45:06] [ INFO ] [OdontologoDaoH2:127] Odontólogo encontrado: ID = 1, Apellido = Daniela, Nombre = Toro, Matrícula = 123
+[2024-08-22 21:16:09] [ INFO ] [OdontologoServiceImpl:27] buscar id en OdontologoServiceImpl
+[2024-08-22 21:16:09] [ INFO ] [OdontologoDaoH2:125] Odontólogo encontrado: ID = 1, Apellido = Daniela, Nombre = Toro, Matrícula = 123

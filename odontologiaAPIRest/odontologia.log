@@ -294,3 +294,15 @@ Caused by: java.lang.NumberFormatException: For input string: "MAT-1"
 [2024-08-21 13:51:46] [ INFO ] [PacienteDaoH2:60] Comenzamos a listar los pacientes
 [2024-08-21 13:51:46] [ INFO ] [PacienteDaoH2:80] Paciente encontrado: ID = 2, Apellido = Montoya, Nombre = Isa, Domicilio = Calle Falsa 321, DNI = 87654321, Fecha de alta = 2024-03-17
 [2024-08-21 13:51:46] [ INFO ] [PacienteDaoH2:92] Se listaron 1 pacientes.
+[2024-08-22 21:09:49] [ INFO ] [OdontologoDaoH2:60] Comenzamos a listar los odontólogos
+[2024-08-22 21:09:49] [ INFO ] [OdontologoDaoH2:89] No se encontró ningún odontólogo.
+[2024-08-22 21:10:24] [ INFO ] [OdontologoDaoH2:60] Comenzamos a listar los odontólogos
+[2024-08-22 21:10:24] [ INFO ] [OdontologoDaoH2:89] No se encontró ningún odontólogo.
+[2024-08-22 21:10:31] [ INFO ] [PacienteDaoH2:63] Comenzamos a listar los pacientes
+[2024-08-22 21:10:31] [ INFO ] [PacienteDaoH2:95] No se encontró ningún paciente.
+[2024-08-22 21:10:57] [ INFO ] [PacienteDaoH2:63] Comenzamos a listar los pacientes
+[2024-08-22 21:10:57] [ INFO ] [PacienteDaoH2:95] No se encontró ningún paciente.
+[2024-08-22 21:10:58] [ INFO ] [PacienteDaoH2:63] Comenzamos a listar los pacientes
+[2024-08-22 21:10:58] [ INFO ] [PacienteDaoH2:95] No se encontró ningún paciente.
+[2024-08-22 21:16:57] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-22 21:16:57] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: isabela3 montoya

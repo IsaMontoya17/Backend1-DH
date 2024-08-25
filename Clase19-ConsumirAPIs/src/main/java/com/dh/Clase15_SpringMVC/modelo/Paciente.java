@@ -1,4 +1,4 @@
-package com.digitalhouse.odontologiaAPIRest.domain;
+package com.dh.Clase15_SpringMVC.modelo;
 
 import java.time.LocalDate;
 
@@ -18,9 +18,6 @@ public class Paciente {
         this.dni = dni;
         this.fechaAlta = fechaAlta;
         this.domicilio = domicilio;
-    }
-
-    public Paciente() {
     }
 
     public Integer getId() {
@@ -84,4 +81,4 @@ public class Paciente {
     }
 
 
-}//CIERRE DE LA CLASE
+}
