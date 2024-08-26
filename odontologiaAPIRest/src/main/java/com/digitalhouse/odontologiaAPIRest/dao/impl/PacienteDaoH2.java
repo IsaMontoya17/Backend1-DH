@@ -14,7 +14,7 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
 
     private static final Logger LOGGER = Logger.getLogger(PacienteDaoH2.class);
     DomicilioDaoH2 domicilioDaoH2 = new DomicilioDaoH2();
-    private static final String INSERTAR = "INSERT INTO PACIENTES (NOMBRE, APELLIDO, DOMICILIO_ID, DNI, FECHA_ALTA) VALUES (?,?,?,?,?)";
+    private static final String INSERTAR = "INSERT INTO PACIENTES (NOMBRE, APELLIDO, DNI, FECHA_ALTA, DOMICILIO_ID) VALUES (?,?,?,?,?)";
     private static final String lISTAR = "SELECT * FROM PACIENTES";
     private static final String CONSULTA_POR_ID = "SELECT * FROM PACIENTES WHERE ID=?";
     private static final String BORRAR_POR_ID = "DELETE FROM PACIENTES WHERE ID=?";
