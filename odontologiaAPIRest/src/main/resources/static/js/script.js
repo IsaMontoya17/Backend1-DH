@@ -10,12 +10,26 @@ window.addEventListener("load", function () {
         });
     });
 
+// ---------- agregar --------------
     logicaAgregarOdontologo();
+    //logicaAgregarPaciente(); TODO
+
+// ---------- eliminar -------------- TODO
+
+
+// ---------- actualizar -------------- TODO
+
+
+// ---------- buscar -------------- TODO
+
+
+// ---------- listar -------------- TODO
+
 
 });
 
 
-//funciones
+// ------------------------------------ funciones --------------------------------------
     function formAgregarOdontologo(){
         document.querySelector('main').innerHTML = `
                 <div class="card">
@@ -123,7 +137,6 @@ window.addEventListener("load", function () {
                             document.querySelector('#response').style.display = "block";
                             resetUploadForm();
 
-                            // Ocultar el mensaje después de 3 segundos
                             setTimeout(() => {
                                 document.querySelector('#response').style.display = "none";
                             }, 4000);
