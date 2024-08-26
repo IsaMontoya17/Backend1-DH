@@ -1133,3 +1133,40 @@ NOMBRE, APELLIDO, DNI, FECHA_ALTA, DOMICILIO_ID) VALUES (?,?,?,?,?) [42000-224]
 [2024-08-26 09:52:35] [ INFO ] [DomicilioDaoH2:130] Domicilio encontrado: ID = 2, Calle = Av. Siempre Viva, Número = 742, Localidad = Springfield, Provincia = Illinois
 [2024-08-26 09:52:35] [ INFO ] [PacienteDaoH2:85] Paciente encontrado: ID = 2, Apellido = Montoya, Nombre = Isabela, Domicilio = com.digitalhouse.odontologiaAPIRest.domain.Domicilio@6723adc1, DNI = 12345678, Fecha de alta = 2023-08-26
 [2024-08-26 09:52:35] [ INFO ] [PacienteDaoH2:97] Se listaron 1 pacientes.
+[2024-08-26 15:05:06] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:05:06] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Montoya Isabela
+[2024-08-26 15:06:00] [ INFO ] [OdontologoDaoH2:60] Comenzamos a listar los odontólogos
+[2024-08-26 15:06:00] [ INFO ] [OdontologoDaoH2:82] Odontólogo encontrado: ID = 1, Apellido = Isabela, Nombre = Montoya, Matrícula = MAT-123
+[2024-08-26 15:06:00] [ INFO ] [OdontologoDaoH2:91] Se listaron 1 odontólogos.
+[2024-08-26 15:10:50] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:10:50] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Isabela Montoya
+[2024-08-26 15:11:18] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:11:18] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Isita Montoya
+[2024-08-26 15:15:24] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:15:24] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Felipe Goez
+[2024-08-26 15:15:38] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:15:38] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Felipe Goez
+[2024-08-26 15:18:04] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:18:05] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Isabela Montoya
+[2024-08-26 15:18:14] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:18:14] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Felipe Goez
+[2024-08-26 15:18:24] [ INFO ] [OdontologoDaoH2:60] Comenzamos a listar los odontólogos
+[2024-08-26 15:18:24] [ INFO ] [OdontologoDaoH2:82] Odontólogo encontrado: ID = 1, Apellido = Montoya, Nombre = Isabela, Matrícula = MAT-000
+[2024-08-26 15:18:24] [ INFO ] [OdontologoDaoH2:82] Odontólogo encontrado: ID = 2, Apellido = Goez, Nombre = Felipe, Matrícula = MAT-123
+[2024-08-26 15:18:24] [ INFO ] [OdontologoDaoH2:91] Se listaron 2 odontólogos.
+[2024-08-26 15:19:12] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:19:12] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Isabela Montoya
+[2024-08-26 15:32:49] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:32:49] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Isita Montoya
+[2024-08-26 15:34:03] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:34:03] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Isita Montoya
+[2024-08-26 15:34:26] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:34:26] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Felipe Montoya
+[2024-08-26 15:34:31] [ INFO ] [OdontologoDaoH2:60] Comenzamos a listar los odontólogos
+[2024-08-26 15:34:31] [ INFO ] [OdontologoDaoH2:82] Odontólogo encontrado: ID = 1, Apellido = Montoya, Nombre = Isita, Matrícula = MAT-000
+[2024-08-26 15:34:31] [ INFO ] [OdontologoDaoH2:82] Odontólogo encontrado: ID = 2, Apellido = Montoya, Nombre = Felipe, Matrícula = MAT-123
+[2024-08-26 15:34:31] [ INFO ] [OdontologoDaoH2:91] Se listaron 2 odontólogos.
+[2024-08-26 15:37:40] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:37:40] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Isita Montoya
+[2024-08-26 15:38:56] [ INFO ] [OdontologoDaoH2:25] Comenzamos a persistir un odontólogo
+[2024-08-26 15:38:56] [ INFO ] [OdontologoDaoH2:43] Odontólogo guardado: Isita Montoya
