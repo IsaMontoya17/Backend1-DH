@@ -33,6 +33,18 @@ public class TurnoController {
 
     @GetMapping
     public ResponseEntity<List<Turno>> listarTodos() {
+
+        //TODO
         return ResponseEntity.ok(iTurnoService.listar());
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> eliminar(@PathVariable Integer id) {
+        boolean eliminado = iTurnoService.eliminar(id);
+        if (eliminado) {
+            return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

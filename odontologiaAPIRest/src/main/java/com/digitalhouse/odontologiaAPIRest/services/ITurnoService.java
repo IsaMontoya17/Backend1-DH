@@ -8,4 +8,5 @@ public interface ITurnoService {
     Turno guardar(Turno turno);
     Turno buscarPorId(Integer id);
     List<Turno> listar();
+    Boolean eliminar(Integer id);
 }

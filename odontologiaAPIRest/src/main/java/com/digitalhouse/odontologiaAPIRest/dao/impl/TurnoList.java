@@ -26,6 +26,7 @@ public class TurnoList implements IDAO<Turno> {
         Turno turnoBuscado = null;
 
         for (Turno t: turnoList) {
+            System.out.println(t.getId() + " " + id);
             if(t.getId().equals(id)) {
                 return t;
             }
@@ -35,8 +36,15 @@ public class TurnoList implements IDAO<Turno> {
 
     @Override
     public Boolean eliminarPorId(Integer id) {
-        return true;
+        for (Turno t : turnoList) {
+            if (t.getId().equals(id)) {
+                turnoList.remove(t);
+                return true;
+            }
+        }
+        return false;
     }
+
 
     @Override
     public Turno actualizar(Turno turno) {

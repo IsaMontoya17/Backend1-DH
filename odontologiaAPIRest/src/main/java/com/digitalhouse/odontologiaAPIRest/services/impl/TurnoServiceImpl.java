@@ -29,4 +29,11 @@ public class TurnoServiceImpl implements ITurnoService {
     public List<Turno> listar() {
         return iDao.listar();
     }
+
+    @Override
+    public Boolean eliminar(Integer id) {
+        return iDao.eliminarPorId(id);
+    }
+
+
 }

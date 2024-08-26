@@ -56,7 +56,6 @@ public class DomicilioDaoH2 implements IDAO<Domicilio> {
         return domicilio;
     }
 
-
     @Override
     public List<Domicilio> listar() {
         LOGGER.info("Comenzamos a listar los domicilios");

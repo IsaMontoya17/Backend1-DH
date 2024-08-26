@@ -1116,3 +1116,20 @@ NOMBRE, APELLIDO, DNI, FECHA_ALTA, DOMICILIO_ID) VALUES (?,?,?,?,?) [42000-224]
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2024-08-26 09:51:38] [ INFO ] [PacienteDaoH2:25] Comenzamos a persistir un paciente
+[2024-08-26 09:51:38] [ INFO ] [PacienteDaoH2:46] paciente guardado: Juan Pérez
+[2024-08-26 09:51:54] [ INFO ] [PacienteDaoH2:25] Comenzamos a persistir un paciente
+[2024-08-26 09:51:54] [ INFO ] [PacienteDaoH2:46] paciente guardado: Isabela Montoya
+[2024-08-26 09:51:59] [ INFO ] [PacienteDaoH2:63] Comenzamos a listar los pacientes
+[2024-08-26 09:51:59] [ INFO ] [DomicilioDaoH2:130] Domicilio encontrado: ID = 1, Calle = Av. Siempre Viva, Número = 742, Localidad = Springfield, Provincia = Illinois
+[2024-08-26 09:51:59] [ INFO ] [PacienteDaoH2:85] Paciente encontrado: ID = 1, Apellido = Pérez, Nombre = Juan, Domicilio = com.digitalhouse.odontologiaAPIRest.domain.Domicilio@49bb9535, DNI = 12345678, Fecha de alta = 2023-08-26
+[2024-08-26 09:51:59] [ INFO ] [DomicilioDaoH2:130] Domicilio encontrado: ID = 2, Calle = Av. Siempre Viva, Número = 742, Localidad = Springfield, Provincia = Illinois
+[2024-08-26 09:51:59] [ INFO ] [PacienteDaoH2:85] Paciente encontrado: ID = 2, Apellido = Montoya, Nombre = Isabela, Domicilio = com.digitalhouse.odontologiaAPIRest.domain.Domicilio@412bc27c, DNI = 12345678, Fecha de alta = 2023-08-26
+[2024-08-26 09:51:59] [ INFO ] [PacienteDaoH2:97] Se listaron 2 pacientes.
+[2024-08-26 09:52:20] [ INFO ] [DomicilioDaoH2:130] Domicilio encontrado: ID = 1, Calle = Av. Siempre Viva, Número = 742, Localidad = Springfield, Provincia = Illinois
+[2024-08-26 09:52:20] [ INFO ] [PacienteDaoH2:132] Paciente encontrado: ID = 1, Apellido = Pérez, Nombre = Juan, Domicilio = com.digitalhouse.odontologiaAPIRest.domain.Domicilio@7660720c, DNI = 12345678, Fecha de alta = 2023-08-26
+[2024-08-26 09:52:32] [ INFO ] [PacienteDaoH2:171] Paciente con ID 1 eliminado correctamente.
+[2024-08-26 09:52:35] [ INFO ] [PacienteDaoH2:63] Comenzamos a listar los pacientes
+[2024-08-26 09:52:35] [ INFO ] [DomicilioDaoH2:130] Domicilio encontrado: ID = 2, Calle = Av. Siempre Viva, Número = 742, Localidad = Springfield, Provincia = Illinois
+[2024-08-26 09:52:35] [ INFO ] [PacienteDaoH2:85] Paciente encontrado: ID = 2, Apellido = Montoya, Nombre = Isabela, Domicilio = com.digitalhouse.odontologiaAPIRest.domain.Domicilio@6723adc1, DNI = 12345678, Fecha de alta = 2023-08-26
+[2024-08-26 09:52:35] [ INFO ] [PacienteDaoH2:97] Se listaron 1 pacientes.

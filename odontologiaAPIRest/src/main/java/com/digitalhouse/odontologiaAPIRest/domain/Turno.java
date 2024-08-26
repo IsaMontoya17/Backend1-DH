@@ -4,7 +4,8 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Turno {
-    private static Integer id=0;
+    private static Integer idCounter = 0; // Contador para generar IDs únicos
+    private Integer id; // ID único para cada instancia
     private Odontologo odontologo;
     private Paciente paciente;
     private LocalDate fecha;
@@ -15,7 +16,7 @@ public class Turno {
         this.paciente = paciente;
         this.fecha = fecha;
         this.hora = hora;
-        id++;
+        this.id = ++idCounter; // Asigna un ID único a cada turno
     }
 
     public Integer getId() {
@@ -24,6 +25,14 @@ public class Turno {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public static Integer getIdCounter() {
+        return idCounter;
+    }
+
+    public static void setIdCounter(Integer idCounter) {
+        Turno.idCounter = idCounter;
     }
 
     public Odontologo getOdontologo() {
